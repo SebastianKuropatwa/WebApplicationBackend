@@ -1,11 +1,11 @@
-package pl.webApplication.shop.admin.service;
+package pl.webApplication.shop.admin.product.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import pl.webApplication.shop.admin.model.AdminProduct;
-import pl.webApplication.shop.admin.repository.AdminProductRepository;
+import pl.webApplication.shop.admin.product.model.AdminProduct;
+import pl.webApplication.shop.admin.product.repository.AdminProductRepository;
 
 import java.util.Optional;
 

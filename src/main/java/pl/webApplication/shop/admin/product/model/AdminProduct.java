@@ -1,4 +1,4 @@
-package pl.webApplication.shop.admin.model;
+package pl.webApplication.shop.admin.product.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

@@ -1,4 +1,4 @@
-package pl.webApplication.shop.admin.controller;
+package pl.webApplication.shop.admin.product.controller;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -6,9 +6,9 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import pl.webApplication.shop.admin.controller.dto.AdminProductDto;
-import pl.webApplication.shop.admin.model.AdminProduct;
-import pl.webApplication.shop.admin.service.AdminProductService;
+import pl.webApplication.shop.admin.product.controller.dto.AdminProductDto;
+import pl.webApplication.shop.admin.product.model.AdminProduct;
+import pl.webApplication.shop.admin.product.service.AdminProductService;
 
 import java.util.Optional;
 

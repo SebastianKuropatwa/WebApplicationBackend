@@ -1,4 +1,4 @@
-package pl.webApplication.shop.admin.controller.dto;
+package pl.webApplication.shop.admin.product.controller.dto;
 
 import jakarta.validation.constraints.*;
 import lombok.Getter;
