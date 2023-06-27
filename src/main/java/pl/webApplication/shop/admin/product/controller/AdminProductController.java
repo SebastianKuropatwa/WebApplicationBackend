@@ -19,7 +19,7 @@ public class AdminProductController {
     public static final Long EMPTY_ID = null;
     public final AdminProductService productService;
 
-    @GetMapping("admin/products")
+    @GetMapping("/admin/products")
     public Optional<Optional<Page<AdminProduct>>> getProducts(Pageable pageable) {
         Optional<Page<AdminProduct>> products = productService.getProducts(pageable);
 
@@ -54,7 +54,7 @@ public class AdminProductController {
     @DeleteMapping("admin/products/{id}")
     public ResponseEntity<Void> deleteProduct(@PathVariable Long id) {
         productService.deleteProductById(id);
-        return ResponseEntity.noContent().build();
+        return ResponseEntity.ok().build();
     }
 
     private static AdminProduct mapAdminProduct(AdminProductDto adminProductDto, Long id) {
@@ -66,5 +66,4 @@ public class AdminProductController {
                 .price(adminProductDto.getPrice())
                 .currency(adminProductDto.getCurrency())
                 .build();
-    }
-}
+    }}
